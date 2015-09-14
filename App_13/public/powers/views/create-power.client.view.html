@@ -20,14 +20,14 @@
          <div>
 			<label for="devices">Smart Plug</label>
 			<div>
-				<select class="form-control" data-ng-model="devices" ng-options="sm.name for sm in deviceList"></select>
+				<select class="form-control" data-ng-model="devices" ng-options="sm._id as sm.name for sm in deviceList"></select>
 			</div>
 		</div>
         
            <div>
 			<label for="smartplugs">Smart Plug</label>
 			<div>
-                <select class="form-control" data-ng-model="smartplugs" ng-options="sm.name for sm in smartplugList"></select>
+                <select class="form-control" data-ng-model="smartplugs" ng-options="sm._id as sm.name for sm in smartplugList"></select>
 				
 			</div>
 		</div>

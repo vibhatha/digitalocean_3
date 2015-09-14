@@ -3,7 +3,7 @@
 
 // Set the 'development' environment configuration object
 module.exports = {
-	db: 'mongodb://localhost/mean-development-3',//vibhatha:machine123@ds031721.mongolab.com:31721
+	db: 'mongodb://vibhatha:machine123@ds031721.mongolab.com:31721/mean-development-3',                                  //vibhatha:machine123@ds031721.mongolab.com:31721  //mongodb://localhost/mean-development-3
 	sessionSecret: 'developmentSessionSecret',
 	facebook: {
 		clientID: 'Facebook Application ID',

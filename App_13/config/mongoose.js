@@ -18,6 +18,7 @@ module.exports = function() {
     require('../app/models/smartplug.server.model');
     require('../app/models/device.server.model');
     require('../app/models/power.server.model');
+    require('../app/models/power1.server.model');
     require('../app/models/graph.server.model');
     require('../app/models/schedule.server.model');
 	// Return the Mongoose connection instance

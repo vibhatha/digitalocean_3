@@ -354,6 +354,24 @@
                             <!-- /.nav-second-level -->
                         </li>
                          <!--Menu Item Device END-->
+                        
+                         <!--Menu Item Power 1 START-->
+                           <li>
+                            <a data-ng-show="authentication.user"  href="#!/"><i class="fa fa-bar-chart-o fa-fw"></i> Power All<span class="fa arrow"></span></a>
+                            <ul data-ng-show="authentication.user"  class="nav nav-second-level">
+                                <li>
+                                    <a href="/#!/power1s">List Power All</a>
+				
+                                </li>
+                                <li>
+                                    	<a href="/#!/power1s/create">Create Power All</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                         <!--Menu Item Power1 END-->
+                        
+                        
                          <!--Menu Item Device START-->
                            <li>
                             <a data-ng-show="authentication.user"  href="#!/"><i class="fa fa-bar-chart-o fa-fw"></i> Smart Plug<span class="fa arrow"></span></a>
@@ -696,6 +714,15 @@
 	<script type="text/javascript" src="/powers/controllers/powers.client.controller.js"></script>
 	<script type="text/javascript" src="/powers/services/powers.client.service.js"></script>
 	<script type="text/javascript" src="/powers/config/powers.client.routes.js"></script>
+    
+    
+    <!--Load the Power1 module-->
+    <script type="text/javascript" src="/power1s/power1s.client.module.js"></script>
+	<script type="text/javascript" src="/power1s/controllers/power1s.client.controller.js"></script>
+	<script type="text/javascript" src="/power1s/services/power1s.client.service.js"></script>
+	<script type="text/javascript" src="/power1s/config/power1s.client.routes.js"></script>
+    
+    
     
      <!-- Load the Graphs module -->
     <script type="text/javascript" src="/graphs/graphs.client.module.js"></script>

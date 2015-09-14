@@ -57,6 +57,7 @@ module.exports = function() {
     require('../app/routes/smartplugs.server.routes.js')(app);
     require('../app/routes/devices.server.routes.js')(app);
     require('../app/routes/powers.server.routes.js')(app);
+    require('../app/routes/power1s.server.routes.js')(app);
     require('../app/routes/graphs.server.routes.js')(app);
     require('../app/routes/schedules.server.routes.js')(app);
 	// Configure static file serving

@@ -1,0 +1,46 @@
+<!-- The list articles view -->
+<section data-ng-controller="Power1sController" data-ng-init="find()">
+	<h1>Power All</h1>
+    <a href="/#!/">Home</a>
+	<ul>
+		<!-- The list of article -->
+	<!--	<li data-ng-repeat="power1 in power1s">
+			<a data-ng-href="#!/power1s/{{power1._id}}" data-ng-bind="power1.pid"></a>
+			<br>
+			<small data-ng-bind="power1.created | date:'medium'"></small>
+			<small>/</small>
+			<small data-ng-bind="power1.creator.fullName"></small>
+            <p>Consumption:<p data-ng-bind="power1.consumption"></p></p>
+            <p>Smart Plugs:<p data-ng-bind="power1.smartplugs"></p></p>
+            <p>Devices:<p data-ng-bind="power1.devices"></p></p>
+		</li>-->
+       <!-- -->
+       
+	</ul>
+<div class="table-panel">
+  <table class=" power-table table-border table table-hover table-stripped">
+        
+        <thead><tr><th>Consumption</th><th>App-Power</th><th>Vrms</th><!--<th>Irms</th>--><th>Phase Shift</th><!--<th>Smart Plug</th>--><th>Device</th><!--<th>Created by</th><th>Created</th>--><th></th></tr></thead>
+            <tbody><tr data-ng-repeat="power1 in power1s">
+                <td data-ng-bind="power1.consumption"></td>
+                <td data-ng-bind="power1.apparentpower"></td>
+                <td data-ng-bind="power1.vrms"></td>
+               <!-- <td data-ng-bind="power1.irms"></td>-->
+                <td data-ng-bind="power1.phaseshift"></td>
+               <!-- <td data-ng-bind="power1.smartplugs"></td>-->
+                <td data-ng-bind="power1.devices"></td>
+                <!--<td data-ng-bind="power1.creator.fullName"></td>
+                <td data-ng-bind="power1.created | date:'medium'"></td>-->
+                <td><a data-ng-href="#!/power1s/{{power1._id}}">View</a></td>
+        </tr></tbody>
+        
+    
+    </table>
+
+
+</div>
+	<!-- If there are no articles in the list, suggest the user's create a new article -->
+	<div data-ng-hide="!power1s || power1s.length">
+		No power1 yet, why don't you <a href="/#!/power1s/create">create one</a>?
+	</div>
+</section>
